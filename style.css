@@ -1,6 +1,11 @@
 body{
     padding:0;
     margin:0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
 }
 
 * {
@@ -9,7 +14,33 @@ body{
 .navigation{
     overflow: auto;
 }
+.btn{
+    color: black;
+    padding: 15px;
+    background-color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 2px 10px #353535;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+.btn:hover{
+    padding-left:30px; 
+    padding-right:30px; 
+    color: white;
+    background-color: rgb(255, 136, 0);
+    
+}
+.banner{
+   /* background-image: url('./banner_croped.jpg');*/
+   background-size: cover;
+   background-image: linear-gradient(to top,rgba(133, 133, 173, 0.5),rgba(133, 133, 173, 0.5),rgba(0,0,0,0.8)),url('./banner_croped.jpg');
+    color:#fff;
+}
 
+.banner-body{
+    padding: 10%;
+}
 /*attributes having col in its place*/
 [class*="col-"]{
     float:left;
